@@ -1,0 +1,57 @@
+  #window {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 313px;
+  }
+  #images {
+    display: flex;
+    transition: all .5s
+  }
+  #btn {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px ;
+    border-radius: 8px;
+    transition: all .5s;
+  }
+  #btn:hover {
+    background-color: rgba(10,10,10,0.5);
+  }
+  #btn botton {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin: 0 5px;
+    transition: all .5s
+  }
+  #btn botton.active {
+    background-color: red;
+  }
+  #btn2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  #btn2 botton {
+    color: rgba(255,0,0,.3);
+    font-size: 60px;
+    height: 80px;
+    line-height: 80px;
+    transition: all .5s;
+  }
+  #btn2 botton:hover {
+    color: rgba(255,0,0,1);
+    background-color: rgba(0,0,0,.3);
+  }
+  #btn2 botton.next {
+    float: right;
+  }
+  botton:hover {
+    cursor: pointer;
+  }
