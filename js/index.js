@@ -19,10 +19,10 @@ $(function(){
       let current = e.currentTarget
       if($(current).hasClass('pre')){
         index-=1
-        index = index<0?0:index
+        index = index<0?($btn.length-1):index
       }else{
         index+=1
-        index = index>=$btn.length?(index-1):index
+        index = index>=$btn.length?0:index
       }
       activateBtn()
       showPic()
