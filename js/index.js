@@ -1,7 +1,7 @@
 $(function(){
 
-    let $btn = $('#btn botton');
-    let $btn2 = $('#btn2 botton')
+    let $btn = $('#btn button');
+    let $btn2 = $('#btn2 button')
     let timer
     let index = 0
     let $window = $('#window')
@@ -58,8 +58,8 @@ $(function(){
         timer = setInterval(function(){
         index+=1
         index = index>=$btn.length?0:index
-        activateBtn(index);
-        showPic(index)
+        activateBtn();
+        showPic()
       },2000)
     }
     

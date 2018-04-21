@@ -1,4 +1,9 @@
-  #window {
+*{
+ margin: 0;
+ padding: 0; 
+}
+
+#window {
     position: relative;
     overflow: hidden;
     width: 500px;
@@ -21,15 +26,18 @@
   #btn:hover {
     background-color: rgba(10,10,10,0.5);
   }
-  #btn botton {
+  #btn button {
+    display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: green;
     margin: 0 5px;
-    transition: all .5s
+    transition: all .5s;
+    outline: none;
+    border: none;
   }
-  #btn botton.active {
+  #btn button.active {
     background-color: red;
   }
   #btn2 {
@@ -38,20 +46,23 @@
     transform: translateY(-50%);
     width: 100%;
   }
-  #btn2 botton {
+  #btn2 button {
     color: rgba(255,0,0,.3);
+    background-color: rgba(255,255,255,0);
+    outline: none;
+    border: none;
     font-size: 60px;
     height: 80px;
     line-height: 80px;
     transition: all .5s;
   }
-  #btn2 botton:hover {
+  #btn2 button:hover {
     color: rgba(255,0,0,1);
     background-color: rgba(0,0,0,.3);
   }
-  #btn2 botton.next {
+  #btn2 button.next {
     float: right;
   }
-  botton:hover {
+  button:hover {
     cursor: pointer;
   }
